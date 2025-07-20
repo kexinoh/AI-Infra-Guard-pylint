@@ -30,7 +30,6 @@ func TestSingleRule(t *testing.T) {
 }
 
 func TestSingleRuleForParse(t *testing.T) {
-	t.Skip("skip network dependent test")
 	dialer, err := fastdialer.NewDialer(fastdialer.DefaultOptions)
 	assert.NoError(t, err)
 	httpOptions := &httpx.HTTPOptions{
