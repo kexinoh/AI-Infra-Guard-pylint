@@ -11,6 +11,7 @@ import (
 )
 
 func TestFingerPrint(t *testing.T) {
+	t.Skip("skip network dependent test")
 	dialer, err := fastdialer.NewDialer(fastdialer.DefaultOptions)
 	assert.NoError(t, err)
 	httpOptions := &httpx.HTTPOptions{
@@ -31,6 +32,7 @@ func TestFingerPrint(t *testing.T) {
 }
 
 func TestRunner_RunFpReqs(t *testing.T) {
+	t.Skip("skip network dependent test")
 	dialer, err := fastdialer.NewDialer(fastdialer.DefaultOptions)
 	assert.NoError(t, err)
 	httpOptions := &httpx.HTTPOptions{
